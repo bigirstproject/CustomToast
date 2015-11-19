@@ -1,13 +1,10 @@
 package com.duowan.toast.toast;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
-
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +14,13 @@ public class MainActivity extends ActionBarActivity {
         getStringResToast();
     }
 
-    public void Toast(){
-        Toast.makeText(MainActivity.this,"MainActivity",Toast.LENGTH_SHORT).show();
+    public void Toast() {
+        Toast.makeText(MainActivity.this, "MainActivity", Toast.LENGTH_SHORT).show();
     }
 
 
-    public void getStringResToast(){
-        Toast.makeText(MainActivity.this,R.string.action_settings,Toast.LENGTH_SHORT).show();
+    public void getStringResToast() {
+        Toast.makeText(MainActivity.this, R.string.app_name, Toast.LENGTH_SHORT).show();
     }
 
 }
